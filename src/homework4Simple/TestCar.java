@@ -7,6 +7,7 @@ public class TestCar {
     //Жашков - Киев - 148 км
     public static void main(String[] args) {
         Car car = new Car(48,9);
+        car.Refuel();
         double fuelNeeded = car.GetFuelForDistance(478);
         int fuelPrice = (int)(fuelNeeded*100*27.89);
         double restOfFuel = car.GetRestOfFuelAfterDistance(148);
