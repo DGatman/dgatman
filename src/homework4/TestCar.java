@@ -9,6 +9,8 @@ public class TestCar {
 
     public static void main(String[] args) {
         ArrayList<Trip> tripList = new ArrayList<>();
+
+        //Todo:Refactor
         Exit : while (true) {
             System.out.println("1. Car\n" +
                     "2. Trip");
