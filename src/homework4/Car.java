@@ -3,13 +3,12 @@ package homework4;
 public class Car {
     private double tankVolume;
     private double fuel;
-    private double fuelPer100km;
-    final int FUEL_PRICE = 2789;
+    private double consumption;
 
-    public Car(double tankVolume,double fuelPer100km) {
+    public Car(double tankVolume,double consumption) {
         this.tankVolume = tankVolume;
         this.fuel = 0;
-        this.fuelPer100km = fuelPer100km;
+        this.consumption = consumption;
     }
 
     public void Refuel() {
@@ -23,7 +22,7 @@ public class Car {
      * @return Amount of fuel ( l. )
      */
     public double GetRestOfFuelAfterDistance(int distance) {
-        return fuel - (distance / 100.0 * fuelPer100km);
+        return fuel - (distance / 100.0 * consumption);
     }
 
     /**
@@ -33,7 +32,7 @@ public class Car {
      * @return aAmount of fuel ( l. )
      */
     public double GetAmountOfMissingFuelAfterDistance(int distance) {
-        return distance / 100.0 * fuelPer100km;
+        return distance / 100.0 * consumption;
     }
 
     /**
@@ -43,7 +42,7 @@ public class Car {
     public void CarInfo(){
         System.out.println("Tank volume :\t" + tankVolume + " l."
                 + "\nFuel :\t" + fuel + " l."
-                + "\nFuel consumption per 100 km :\t" + fuelPer100km + " l.");
+                + "\nFuel consumption per 100 km :\t" + consumption + " l.");
     }
     //Getters and setters
     public void setTankVolume(double tankVolume) {
@@ -54,8 +53,8 @@ public class Car {
         this.fuel = fuel;
     }
 
-    public void setFuelPer100km(double fuelPer100km) {
-        this.fuelPer100km = fuelPer100km;
+    public void setConsumption(double consumption) {
+        this.consumption = consumption;
     }
 
     public double getTankVolume() {
@@ -66,7 +65,7 @@ public class Car {
         return fuel;
     }
 
-    public double getFuelPer100km() {
-        return fuelPer100km;
+    public double getConsumption() {
+        return consumption;
     }
 }
