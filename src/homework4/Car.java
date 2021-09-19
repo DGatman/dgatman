@@ -6,14 +6,16 @@ public class Car {
     private double fuelPer100km;
     final int FUEL_PRICE = 2789;
 
+
     public Car(double tankVolume,double fuelPer100km) {
         this.tankVolume = tankVolume;
         this.fuel = 0;
         this.fuelPer100km = fuelPer100km;
     }
 
-    public void Refuel() {
-        fuel = tankVolume;
+    public void Refuel(int count) {
+        fuel += fuel+count>tankVolume? tankVolume : count;
+
     }
 
     /**
@@ -51,7 +53,7 @@ public class Car {
     }
 
     public void setFuel(double fuel) {
-        this.fuel = fuel;
+        this.fuel = Math.min(fuel, tankVolume);
     }
 
     public void setFuelPer100km(double fuelPer100km) {

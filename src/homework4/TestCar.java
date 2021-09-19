@@ -10,21 +10,18 @@ public class TestCar {
     public static void main(String[] args) {
         ArrayList<Trip> tripList = new ArrayList<>();
 
-        //Todo:Refactor
+        //Я знаю,выглядит ужасно.Хотел разбить на методы и засунуть в енам,но до понедельника уже не успеваю.
         Exit : while (true) {
             System.out.println("1. Car\n" +
                     "2. Trip");
             switch (in.nextInt()) {
                 //Car
                 case 1:
-                    System.out.println("1. Car info.\n" +
-                            "2. Edit car.\n" +
+                    car.CarInfo();
+                    System.out.println("1. Edit car.\n" +
                             "0. Back.");
                     switch (in.nextInt()) {
                         case 1:
-                            car.CarInfo();
-                            break;
-                        case 2:
                             System.out.println("Edit :\n" +
                                     "1. Tank volume.\n" +
                                     "2. Fuel amount.\n" +
@@ -75,10 +72,11 @@ public class TestCar {
                                 System.out.println("Enter the name of the " + (i + 1) + " stop.");
                                 in.nextLine();
                                 trip.getStopList()[i].setName(in.nextLine());
-                                System.out.println("Enter the distance from start point of the " + (i + 1) + " stop.");
+                                System.out.println("Enter the distance from start point to the " + (i + 1) + " stop.");
                                 trip.getStopList()[i].setDistanceFromStart(in.nextInt());
                             }
                             tripList.add(trip);
+                            trip.TripInfo();
                             break;
                         case 2:
                             for (int i = 0; i < tripList.size(); i++) {
