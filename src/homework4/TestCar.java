@@ -41,7 +41,7 @@ public class TestCar {
                                 case 3:
                                     System.out.println("Previous fuel consumption : " + car.getTankVolume() + " l per 100 km.\n" +
                                             "New(use < , > as a separator) :");
-                                    car.setFuelPer100km(in.nextDouble());
+                                    car.setConsumption(in.nextDouble());
                                     break;
                                 case 0:
                                     break;
