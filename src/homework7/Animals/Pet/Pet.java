@@ -14,7 +14,7 @@ public abstract class Pet extends Animal {
 
     @Override
     public void voice() {
-      super.voice();
+        super.voice();
         System.out.print("my name is " + this.name);
     }
 

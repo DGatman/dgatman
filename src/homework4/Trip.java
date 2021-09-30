@@ -13,6 +13,7 @@ public class Trip {
         for (int i = 0; i < stopList.length; i++) {
             stopList[i]=new Stop();
         }
+
         this.price =(int)(TestCar.car.getTankVolume()*2789);
     }
 

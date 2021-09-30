@@ -9,4 +9,6 @@ public class Hamster extends Pet{
     public void voice() {
         super.voice();
     }
+
 }
+

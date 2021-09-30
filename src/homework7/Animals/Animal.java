@@ -1,5 +1,6 @@
 package homework7.Animals;
 
+
 public abstract class Animal {
     int id;
     int age;
@@ -16,4 +17,6 @@ public abstract class Animal {
     public void voice(){
         System.out.println("Hello, ");
     }
+
 }
+
