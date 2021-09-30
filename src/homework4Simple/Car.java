@@ -5,7 +5,6 @@ public class Car {
     private double fuel;
     private double fuelPer100km;
 
-
     public Car(double tankVolume, double fuelPer100km) {
         this.tankVolume = tankVolume;
         this.fuel = 0;

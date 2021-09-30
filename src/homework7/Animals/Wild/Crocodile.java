@@ -3,6 +3,7 @@ package homework7.Animals.Wild;
 import homework7.Animals.Predator;
 import homework7.Animals.Swimable;
 
+
 public class Crocodile extends Wild implements Swimable, Predator {
     public Crocodile(int id, int age, int weight, String color) {
         super(id, age, weight, color, true);

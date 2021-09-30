@@ -15,7 +15,6 @@ public class TestCar {
         int toRefuel;
         Random random = new Random();
         Car car = new Car(random.nextInt(40)+20,random.nextInt(4)+8);
-
         System.out.println("You started trip.");
         car.CarInfo();
         car.Refuel();
