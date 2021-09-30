@@ -1,4 +1,4 @@
-package homework7.Pet;
+package homework7.Animals.Pet;
 
 public class GuideDog extends Dog{
     boolean isTrained = true;

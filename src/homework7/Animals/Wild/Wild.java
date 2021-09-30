@@ -1,6 +1,6 @@
-package homework7.Wild;
+package homework7.Animals.Wild;
 
-import homework7.Animal;
+import homework7.Animals.Animal;
 
 public abstract class Wild extends Animal {
     boolean isPredator;

@@ -1,4 +1,4 @@
-package homework7.Pet;
+package homework7.Animals.Pet;
 
 public class Cat extends Pet{
     public Cat(int id, int age, int weight, String color, String name, boolean isVaccinated) {

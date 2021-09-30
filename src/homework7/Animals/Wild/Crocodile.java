@@ -1,7 +1,7 @@
-package homework7.Wild;
+package homework7.Animals.Wild;
 
-import homework7.Swimable;
-import homework7.Predator;
+import homework7.Animals.Swimable;
+import homework7.Animals.Predator;
 
 public class Crocodile extends Wild implements Swimable, Predator {
     public Crocodile(int id, int age, int weight, String color) {

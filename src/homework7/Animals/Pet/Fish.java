@@ -1,6 +1,6 @@
-package homework7.Pet;
+package homework7.Animals.Pet;
 
-import homework7.Swimable;
+import homework7.Animals.Swimable;
 
 public class Fish extends Pet implements Swimable {
     public Fish(int id, int age, int weight, String color, String name, boolean isVaccinated) {

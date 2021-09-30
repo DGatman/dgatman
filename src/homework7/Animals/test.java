@@ -1,6 +1,6 @@
-package homework7;
+package homework7.Animals;
 
-import homework7.Wild.Wolf;
+import homework7.Animals.Wild.Wolf;
 
 public class test {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package homework7.Wild;
+package homework7.Animals.Wild;
 
 public class Giraffe extends Wild{
     public Giraffe(int id, int age, int weight, String color) {

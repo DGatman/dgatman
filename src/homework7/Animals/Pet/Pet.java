@@ -1,6 +1,6 @@
-package homework7.Pet;
+package homework7.Animals.Pet;
 
-import homework7.Animal;
+import homework7.Animals.Animal;
 
 public abstract class Pet extends Animal {
     String name;

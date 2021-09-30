@@ -1,4 +1,4 @@
-package homework7;
+package homework7.Animals;
 
 public abstract class Animal {
     int id;
