@@ -14,6 +14,7 @@ public class MyCollection implements StringCollection{
 
     @Override
     public boolean add(String str) {
+        return true;
     }
 
     @Override

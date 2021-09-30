@@ -1,6 +1,11 @@
 package homework8;
 
+import java.util.ArrayList;
+
 public class CollectionTest {
+    public static void main(String[] args) {
+        checkOperations();
+    }
     private static void checkOperations() {
         // Check create collection
         StringCollectionImpl c = new StringCollectionImpl();
